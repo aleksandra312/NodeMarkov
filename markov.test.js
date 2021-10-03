@@ -24,8 +24,9 @@ describe('makeChains function', function() {
     });
 });
 
-// describe('makeText function', function() {
-//     test('makeText should return a string', function() {
-//         console.log(mm.makeText((numWords = 50)));
-//     });
-// });
+describe('makeText function', function() {
+    test('makeText should return a string', function() {
+        expect(mm.makeText()).toBeTruthy();
+        expect(mm.makeText()).toEqual(expect.any(String));
+    });
+});

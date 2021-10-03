@@ -40,7 +40,7 @@ class MarkovMachine {
         let key = MarkovMachine.randKey(keys);
         let out = [];
 
-        while (out.length < numWords && key !== null) {
+        while (out.length < numWords && key) {
             out.push(key);
             key = MarkovMachine.randKey(this.chains.get(key));
         }
